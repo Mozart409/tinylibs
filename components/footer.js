@@ -1,19 +1,25 @@
 function Footer() {
   return (
-    <footer className="bg-blue-500">
-      <ul className="flex items-center justify-between max-w-4xl p-4 mx-auto text-sm text-white md:p-8">
+    <footer className="">
+      <ul className="flex items-center justify-between p-4 mx-auto text-sm text-cool-gray-600 max-w-7xl md:p-8">
         <li>
           Created by{" "}
-          <a href="https://bryant.io" target="_blank" className="font-bold">
-            Taylor Bryant
+          <a
+            href="https://github.com/mozart409"
+            target="_blank"
+            className="font-bold"
+            rel="noopener noreferrer"
+          >
+            Mozart409
           </a>
         </li>
 
         <li>
           <a
-            href="https://github.com/oddstronaut/tailwind-next"
+            href="https://github.com/mozart409/tinylibs"
             target="_blank"
             className="font-bold"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>

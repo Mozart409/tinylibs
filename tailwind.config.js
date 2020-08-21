@@ -3,7 +3,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  variants: {},
+  variants: {
+    borderStyle: ["responsive", "hover", "focus"],
+    borderWidth: ["responsive", "hover", "focus"],
+  },
   future: {
     removeDeprecatedGapUtilities: true,
   },

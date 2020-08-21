@@ -2,7 +2,9 @@ type Package {
   language: String!
   category: String!
   name: String!
+  excerpt: String!
   git_repo: String!
+  git_stars: Int!
   size: Int!
   size_format: String!
   size_compression: String

@@ -2,15 +2,15 @@ import React from "react";
 
 function LoadingSpinner() {
   return (
-    <div className="rounded-t-lg overflow-hidden bg-white text-center p-4 py-12">
+    <div className="p-4 py-12 overflow-hidden text-center bg-white rounded-t-lg">
       <span className="inline-flex rounded-md shadow-sm">
         <button
           type="button"
-          className="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150 cursor-not-allowed"
+          className="inline-flex items-center px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md cursor-not-allowed hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
           disabled=""
         >
           <svg
-            className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+            className="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -21,7 +21,7 @@ function LoadingSpinner() {
               cy="12"
               r="10"
               stroke="currentColor"
-              stroke-width="4"
+              strokeWidth="4"
             ></circle>
             <path
               className="opacity-75"

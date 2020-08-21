@@ -15,6 +15,8 @@ function AllPackages() {
             category
             language
             git_repo
+            git_stars
+            excerpt
             logo
             size
             size_format
@@ -56,23 +58,24 @@ function AllPackages() {
                       src={node.logo}
                       alt="content"
                     />
-                    <h3 className="text-xs font-medium tracking-widest text-indigo-500 title-font">
-                      {node.name}
-                    </h3>
-                    <h2 className="mb-4 text-lg font-medium text-gray-900 title-font">
+                    <h3 className="font-mono text-xs tracking-wide uppercasefont-medium text-cool-gray-500">
                       {node.category}
-                      {" | "}
+                      &bull;
                       {node.language}
+                      &bull;
+                      {node.git_stars}
+                    </h3>
+                    <h2 className="text-lg font-medium text-gray-900 mb-4s">
+                      {node.name}
                     </h2>
-                    <p className="text-base leading-relaxed">
-                      <a
-                        href={node.git_repo}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                      >
-                        Learn more.
-                      </a>
-                    </p>
+                    <p className="text-base leading-relaxed">{node.excerpt}</p>
+                    <a
+                      href={node.git_repo}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      Learn more.
+                    </a>
                   </div>
                 </div>
               ))}

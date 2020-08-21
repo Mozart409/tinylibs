@@ -7,7 +7,6 @@ function IndexPage() {
     <Layout>
       <div className="flex flex-col items-center justify-center">
         <AllPackages />
-        <LoadingSpinner />
       </div>
     </Layout>
   );
