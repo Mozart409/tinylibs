@@ -1,0 +1,11 @@
+type Package {
+  language: String!
+  category: String!
+  name: String!
+  git_repo: String!
+  logo: String
+}
+
+type Query {
+    allPackages: [Package!]
+}
