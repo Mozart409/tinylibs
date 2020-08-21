@@ -3,9 +3,12 @@ type Package {
   category: String!
   name: String!
   git_repo: String!
+  size: Int!
+  size_format: String!
+  size_compression: String
   logo: String
 }
 
 type Query {
-    allPackages: [Package!]
+  allPackages: [Package!]
 }
