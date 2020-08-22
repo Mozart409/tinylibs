@@ -13,25 +13,25 @@ function Header() {
               viewBox="0 0 20 20"
               fill="currentColor"
               id="library"
-              class="w-8 h-8 text-cool-gray-900"
+              className="w-8 h-8 text-cool-gray-900"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M10.496 2.132a1 1 0 00-.992 0l-7 4A1 1 0 003 8v7a1 1 0 100 2h14a1 1 0 100-2V8a1 1 0 00.496-1.868l-7-4zM6 9a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1zm3 1a1 1 0 012 0v3a1 1 0 11-2 0v-3zm5-1a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               ></path>
             </svg>
           </span>
 
           <Link href="/">
-            <a className="text-xl font-mono font-bold text-cool-gray-900">
+            <a className="font-mono text-xl font-bold text-cool-gray-900">
               Tinylibs
             </a>
           </Link>
         </div>
 
         <button
-          className="flex items-center block px-3 py-2 border border-white rounded text-cool-gray-900 md:hidden"
+          className="flex py-2 border border-white rounded items-centerpx-3 text-cool-gray-900 md:hidden"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
