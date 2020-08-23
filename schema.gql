@@ -1,12 +1,12 @@
 type Package {
-  language: String!
+  language: String
   category: String!
   name: String!
-  excerpt: String!
-  git_repo: String!
-  git_stars: Int!
+  excerpt: String
+  git_repo: String
+  git_stars: Int
   size: Int!
-  size_format: String!
+  size_format: String
   size_compression: String
   logo: String
 }
@@ -14,3 +14,24 @@ type Package {
 type Query {
   allPackages: [Package!]
 }
+
+""" mutation CreateAListedTodo {
+  createPackage(
+    data: {
+      category: "Preact"
+      size: 1100
+      excerpt: "bassdrum let's you create reactive, type safe components with preact and rxjs."
+      name: "bassdrum"
+      git_repo: "https://github.com/malte-wessel/bassdrum"
+      logo: "https://github.githubassets.com/images/icons/emoji/unicode/1f941.png"
+    }
+  ) {
+    category
+    size
+    excerpt
+    name
+    git_repo
+    logo
+  }
+}
+ """

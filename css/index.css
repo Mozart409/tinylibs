@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
+.customlink {
   @apply font-mono bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500 hover:to-blue-800 transition-colors duration-300 transform ease-in-out hover:no-underline;
 }

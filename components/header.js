@@ -49,10 +49,7 @@ function Header() {
             isExpanded ? `block` : `hidden`
           } md:flex flex-col md:flex-row md:items-center md:justify-center text-md w-full md:w-auto`}
         >
-          {[
-            { title: "Home", route: "/" },
-            { title: "About", route: "/about" },
-          ].map((navigationItem) => (
+          {[{ title: "Home", route: "/" }].map((navigationItem) => (
             <li className="mt-3 md:mt-0 md:ml-6" key={navigationItem.title}>
               <Link href={navigationItem.route}>
                 <a className="block text-cool-gray-900">
