@@ -5,9 +5,9 @@ function Header() {
   const [ isExpanded, toggleExpansion ] = useState(false)
 
   return (
-    <header className="mt-4">
+    <header className="mt-4 mx-4 md:mx-6 lg:mx-8">
       <div className="flex flex-wrap items-center justify-between mx-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl md:flex-no-wrap">
-        <div className="flex items-center">
+        <div className="flex items-center lg:ml-0">
           <span className="w-10 mr-3">
             <img src="/icon.svg" className="" />
           </span>
@@ -33,7 +33,7 @@ function Header() {
             : `hidden`} md:flex flex-col md:flex-row md:items-center md:justify-center text-md w-full md:w-auto`}
         >
           {[ { title: 'Home', route: '/' } ].map((navigationItem) => (
-            <li className="mt-3 md:mt-0 md:ml-6" key={navigationItem.title}>
+            <li className="mt-3 md:mt-0 sm:ml-6" key={navigationItem.title}>
               <Link href={navigationItem.route}>
                 <a className="block text-cool-gray-900">{navigationItem.title}</a>
               </Link>
