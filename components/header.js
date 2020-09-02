@@ -5,7 +5,7 @@ function Header() {
   const [ isExpanded, toggleExpansion ] = useState(false)
 
   return (
-    <header className="mt-4 mx-4 md:mx-6 lg:mx-8">
+    <header className="mx-4 mt-4 md:mx-6 lg:mx-8">
       <div className="flex flex-wrap items-center justify-between mx-auto sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl md:flex-no-wrap">
         <div className="flex items-center lg:ml-0">
           <span className="w-10 mr-3">
